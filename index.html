@@ -31,8 +31,8 @@
     <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
     <form><label for="Brest"></label>
       <select required="Brest" id="Brest">
-         <option selected disabled="Brest">Brest</option>
-        <option value="Minsk">Minsk</option>       
+        <option value="Minsk">Minsk</option>
+        <option selected disabled="Brest">Brest</option>
         <option value="Mogilev">Mogilev</option>
         <option value="Mogilev">Mogilev</option>
     </form>
@@ -103,30 +103,33 @@
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
 
       <table cellspacing="2" border="1px" cellpadding="5" width="30%">
-        
+        <thead>
+          <tr>
+            <th>п\п</th>
+            <th>Наименование</th>
+            <th>Количество</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+          <td>1</td>
+          <td>Монитор</td>
+          <td>2</td>
+        </tr>
         <tr>
-          <th>п\п</th>
-          <th>Наименование</th>
-          <th>Количество</th>
-        </tr>        
-          <tr>
-            <td>1</td>
-            <td>Монитор</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Клавиатура</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Мышь</td>
-            <td>1</td>
-          </tr>       
-          <tr>
-            <td colspan="2" style="text-align:right">ИТОГО:</td><td>4</td>           
-          </tr>       
+          <td>2</td>
+          <td>Клавиатура</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Мышь</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:right">ИТОГО:</td>
+          <td>4</td>
+        </tr></thead>        
       </table>
   </section>
   <footer data-cy="hw-footer-pre">
