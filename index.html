@@ -31,10 +31,10 @@
     <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
     <form><label for="Brest"></label>
       <select required="Brest" id="Brest">
-
-        <option value="1">Minsk</option>
-        <option selected disabled="Brest">Brest</option>
-        <option value="3">Mogilev</option>
+         <option selected disabled="Brest">Brest</option>
+        <option value="Minsk">Minsk</option>       
+        <option value="Mogilev">Mogilev</option>
+        <option value="Mogilev">Mogilev</option>
     </form>
     </select>
     <div data-cy="hw1-unordered-list-box-pre">
@@ -102,15 +102,13 @@
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
 
-      <table cellspacing="2" border="1" cellpadding="5" width="30%">
-        <thead>
-          <tr>
-            <th>п\п</th>
-            <th>Наименование</th>
-            <th>Количество</th>
-          </tr>
-        </thead>
-        <tbody>
+      <table cellspacing="2" border="1px" cellpadding="5" width="30%">
+
+        <tr>
+          <th>п\п</th>
+          <th>Наименование</th>
+          <th>Количество</th>
+        </tr>        
           <tr>
             <td>1</td>
             <td>Монитор</td>
@@ -125,20 +123,16 @@
             <td>3</td>
             <td>Мышь</td>
             <td>1</td>
-          </tr>
-        </tbody>
-        <tfoot>
+          </tr>       
           <tr>
-            <td colspan="2">Итого</td>
-            <td>4</td>
-          </tr>
-        </tfoot>
+            <td colspan="2" style="text-align:right">ИТОГО:</td><td>4</td>           
+          </tr>       
       </table>
   </section>
   <footer data-cy="hw-footer-pre">
     <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
     <p>
-      <a href="https://it-incubator.io"> it-incubator.io</a>
+      <a href="https://it-incubator.io">it-incubator</a>
     </p>
   </footer>
 </body>
