@@ -102,35 +102,32 @@
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
 
-      <table cellspacing="2" border="1px" cellpadding="5" width="30%">
-        <thead>
-          <tr>
-            <th>п\п</th>
-            <th>Наименование</th>
-            <th>Количество</th>
-          </tr>
-        </thead>
-        <thead>
-          <tr>
-          <td>1</td>
-          <td>Монитор</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Клавиатура</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Мышь</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align:right">ИТОГО:</td>
-          <td>4</td>
-        </tr></thead>        
-      </table>
+      <table data-cy="hw2-about-table-pre" border="1">
+            <tr>
+                <th>п/п</th>
+                <th>Наименование</th>
+                <th>Количество</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Монитор</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Клавиатура</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Мышь</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="2">Итого:</td>
+                <td>4</td>
+            </tr>
+        </table>
   </section>
   <footer data-cy="hw-footer-pre">
     <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
